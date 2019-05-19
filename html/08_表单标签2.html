@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单标签2</title>
+<!--
+	
+	常用的表单的分类
+			
+			input
+				type = "text"  文本输入框
+				type="password" 密码输入框
+				type="radio"    单选按钮
+				type="checkbox" 复选框
+				type="hidden"   隐藏域（没有效果，可以携带数据）
+				type="button" value="默认值" 普通按钮
+				type="file" 上传文件
+				type="submit" 提交按钮
+				type="reset"  重置按钮
+				type="date" 填写日期(h5提供的)
+				 
+		    select 下拉菜单          应用场景:省市联动
+		    	option :下拉选项
+		    	
+		    textarea :文本域
+		     
+		    
+		    
+-->
+	</head>
+	<body>
+		<!--
+		input标签:
+			必填项:name属性
+		
+	    -->
+		<from>
+			用户名：<input type="text" name="username"></br>
+			密码：<input  type="password" name="password"></br>
+			<!--
+				将input标签内容:看成同一组信息,指定相同name属
+			-->
+			性别：<input type="radio" value= "男" name="gender">男
+				<input type="radio" value= "女" name="gender">女</br>
+			爱好：
+			<input type="checkbox" value="篮球" name="hobit">篮球
+			<input type="checkbox" value="足球" name="hobit">足球
+		    <input type="checkbox" value="乒乓球" name="hobit">乒乓球</br>
+		    日期：
+		    <input type="date" name="date"></br>
+		   联系方式：<!--提交的时候:这个数据是数字类型的字符串-->
+		   <input type="tel" /></br>
+		   <!--隐藏域-->
+		   <input type="hidden" name="id"/>
+		   <!--下拉菜单-->
+		 学历：
+		   <select name="edu">
+		   	<option>大专</option>
+		   	<option>本科</option>
+		   	<option>硕士</option>
+		   </select></br>
+		   	
+		 上传图片：
+		 <input type="file" name="photo"></br>
+		 自我描述:
+		 <!--rows:指定多少行
+		 	cols:指定一行多个字符
+		 -->
+		 <textarea name="decription" rows="5" cols="20">
+		 </textarea>
+		 <br />
+		 <input type="button" value="普通按钮" onclick="">
+		 <input type="submit" name="提交" >
+		 <input type="reset" name="重置" >
+		</from>
+	</body>
+</html>

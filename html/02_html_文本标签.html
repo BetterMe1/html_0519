@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		--->
+		<h1>标题1</h1>
+		<h2>标题2</h2>
+		<h3>标题3</h3>
+		<h4>标题4</h4>
+		<h5>标题5</h5>
+		<h6>标题6</h6>
+		<h7>标题7</h7><!--没有效果--->
+		<!--2）换行标签-->
+		<br  />
+		<!--
+		3)段落标签 p标签 （携带换行效果）
+		--->
+		<p>床前明月光</p>
+		<p>疑是地上霜</p>
+		<!--4)段落缩进标签：blockquote    （引用标签）
+			q标签：引用标签（小引用）
+		-->
+		<blockquote>
+			对第二章内容的背景解释说明对第二章内容的背景解释说明对第二章内容的背景解释说明
+		</blockquote>
+		<!--
+        	5)滚动标签
+        	marquee:默认滚动的方向：从右到左的滚动
+        	    属性：behavior:滚动的方式
+        	              scroll:交替滚动
+        	              slide:滚动到某一边结束
+        	              alternate:来回滚动
+        	              
+        	               给标签设置值背景颜色:bgColor属性（（html标签属性）
+        	     loop:设置滚动的次数
+        	     direction：滚动的方向 ：left,right...
+        	     scrollamount：设置滚动的速度（设置正整数值）
+        	     
+        	     background-color(CSS背景属性样式)
+        -->
+        <marquee behavior="alternate" bgcolor="darkgray" scrollamount="15" direction="right" loop="2" >哈哈哈</marquee>
+        <marquee behavior="scroll" bgcolor="palevioletred" scrollamount="50" direction="left" loop="2"> 哈哈哈</marquee>
+        <marquee behavior="slide" bgcolor="greenyellow" scrollamount="10" direction="right" loop="2" >哈哈哈</marquee>
+	    <!--6）原样输出标签：pre-->
+	    <pre>
+床前明月光,
+疑是地上霜
+	    </pre>
+	    <!--7)上下标标签 sup sub
+	转义字符:&nbsp;空格的特殊字符（代表两个空格）
+	      &copy;版权所有 ©
+	      &reg;注册商标 (已经注册了的) ®
+	     -->
+	     数学公式：x^2&nbsp;&nbsp;x<sup>2</sup><br/>
+	     化学公式：CO2&nbsp;&nbsp;CO<sub>2</sub><br />
+	  xxx公司：<sup>&copy</sup> 注册商标<sup>&reg;</sup> 2019-05-17
+	  <hr />
+	  <!--
+	8)列表标签
+	             有序列表 :ol  li(列表项)
+	            无序列表:ul  li(列表项)
+	            
+	             ol/ul
+	                   属性:type:规定当前列表项的标记
+	  -->
+	  您喜欢?
+	  <ul type="circle">
+	  	<li>哈哈</li>
+	  	<li>哈哈</li>
+	  	<li>哈哈</li>
+	  	<li>哈哈</li>
+	  </ul>
+	  您喜欢?
+	  <ol type = "1.">
+	  	<li>嘿嘿</li>
+	  	<li>嘿嘿</li>
+	  	<li>嘿嘿</li>
+	  	<li>嘿嘿</li>
+	  </ol>
+	  项目组织架构的列表<br/>
+	  <dl>
+	  	<dt>攻城狮</dt>
+	  	<dd>攻城狮1号</dd>
+	  	<dd>攻城狮2号</dd>
+	  	<dd>攻城狮3号</dd>
+	  </dl>
+	  <!--9)其他的文本标签-->
+	  <font color="#F00" size="7">字体标签</font></br>
+	  <!--粗体标签
+	  strong标签:普通的加粗标签
+	  b标签:带一种"语义"的粗体标签(强调)	  
+	  -->
+	  <b>你好</b></br>
+	  <strong>你好</strong></br>
+	  <!--斜体标签
+	  	i标签：带一种”语义“（强调）
+	  -->
+	  <em>沁园春</em></br>
+	  <i>沁园春</i></br>
+	  <!--行内标签 :表单验证会使用这个标签-->
+	  <span>行内标签1</span>
+	  <span>行内标签2</span>
+	  <!--块标签：div标签
+	网页布局有两种方式：
+	     早期的table布局  
+	  div+css：分层布局(推荐)
+	  -->
+	  <div id="d1">div1</div>
+	  <div id="d2">div2</div>
+	  <!--居中标签-->
+	  <center>居中标签</center>
+	</body>
+</html>

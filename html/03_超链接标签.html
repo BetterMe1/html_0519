@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>超链接标签</title>
+		<style>
+		#a1{
+			text-decoration: none;/*去掉下划线*/
+		}
+		#a2{
+			text-decoration: none;/*去掉下划线*/
+		}
+		</style>
+		<!--
+		a标签	
+			常用的几个属性：
+				href：跳转到指定的url资源路径
+					url:统一资源定位符：是一个uri的子集
+					   http://localhost:8080/xx.jsp
+					uri:定位路径 
+					     /web application/xxxServlet
+					     
+		    	target:打开指定资源文件的方式
+		    			_self:在当前窗口直接打开
+		    			_blank:新建一个窗口打开
+		    			
+		    			如果在框架标签：frame中结合使用
+		    			target：表示在哪个框架标签中打开（和frame中name属性值一样）
+		    	常见的协议：
+		    	   file:// ：本地文件协议
+		    	         打开本地的资源文件的协议
+		    	   http://：网络协议
+		    	   		http协议的执行流程：
+		    	    
+		    	    https：//
+		    	   				request：请求对象
+		    	   				response：响应对象
+		    	   				
+		    	   jdbc://：链接mysql数据库的协议
+		    	   thunder://:迅雷协议
+		    	   mailto:邮件协议
+		    	   
+		  超链接的作用
+		  	1)基本使用：跳转指定资源文件
+		  	2）作为锚链接来使用
+		  			分两种情况
+		  				同一个页面下：
+		  							1）打锚点（作标记）
+		  							<a name="锚点名称"></a>
+		  							2）创建跳转链接
+		  							 <a href="#锚点名称">执行跳转</a>
+		  							
+		  			          在不同页面下
+		  			         		1）打锚点（作标记） :在另一个面中
+		  			         		<a name="锚点名称"></a>
+		  							2）创建跳转链接
+		  							    在当前页面跳转链接
+		  							   <a href="xxx.html#锚点名称">执行跳转</a>	    	   
+	-->
+	</head>
+	<body>
+		<a name="top"></a>
+		<a href="02_html_文本标签.html">超链接</a></br>	
+		<a href="02_html_文本标签.html" target = _blank">超链接2</a></br>		
+		<a href="http://www.baidu.com">跳转到百度</a></br>	
+		<!--
+        	2）创建跳转链接
+        -->
+        <a id="a1" href="#foot"><font color= "#F00">【跳转底部】</font></a>
+	</br></br></br></br></br></br></br></br></br></br></br>
+	</br></br></br></br></br></br></br></br></br></br></br>
+	</br></br></br></br></br></br></br></br></br></br></br>
+	</br></br></br></br></br></br></br>
+	网站内容网站内容网站内容网站内容网站内容网站内容网站内容网站内容网站内容网站内容网站内容
+	网站内容网站内容网站内容网站内容网站内容网站内容
+	网站内容网站内容网站内容网站内容网站内容网站内容网站内容网站内容网站内容网站内容网站内容
+	</br>
+	<!--
+		1）创建跳转标记，打锚点
+    -->
+    <a name="foot"></a>
+    <!--
+    	跳转链接
+    -->
+    <a id="a2" href="#top"><font color= "#0F0">【跳转顶部】</font></a>
+	</body>
+</html>

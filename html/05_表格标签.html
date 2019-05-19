@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表格标签</title>
+		<!--
+	表格标签:
+	 table 
+	 		表格的行：tr 
+	 		没有列的概念：td 表格中的单元格
+	 		          th标签：自动居中并且加粗
+	 	表格标题标签：caption
+	 		
+	 	常用的属性:
+	 		border:指定边框大小  1px
+	 		width/height:表格宽高
+	 		align:表格对其的方式
+	 		bgColor:背景色
+	 		cellspacing:单元格和边框线之间的空隙 
+	 		
+	 	td中有两个属性
+	 		合并行：rowspan
+	 		合并列：colspan
+-->
+	</head>
+	<body>
+	<table border="1px" width="300px" height="300" 
+		cellspacing="0" align="center" bgColor = "pink">
+		<colspan>xxx学校平均成绩</colspan>
+		<tr>
+			<td>姓名</td>
+			<td>班级</td>
+			<td>成绩</td>
+		</tr>
+		<tr align="center">
+			<td rowspan="2">小红</td>
+			<td colspan="2">20</td>
+		</tr>
+		<tr align="center">
+			<td>1班</td>
+			<td>80</td>
+		</tr>
+		<tr align="center">
+			<td>小明</td>
+			<td>2班</td>
+			<td>99</td>
+		</tr>
+	</table>
+	</body>
+</html>
